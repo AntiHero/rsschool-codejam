@@ -1,13 +1,16 @@
 function sumOfOther(arr) {
   let len = arr.length;
-  let tmp = 0;
+
   return arr.map(function sum(item, index, array) {
-    tmp = 0;
+    item = 0;
     for (let i = 0; i < len; i++) {
       if (i != index) {
-        tmp += array[i];
+        item += array[i];
       }
     }
-    return item = tmp;
+    return item;
   });
 }
+
+let arr = [2, 3, 4, 1];
+console.log(sumOfOther(arr));
